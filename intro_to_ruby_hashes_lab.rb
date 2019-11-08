@@ -32,7 +32,7 @@ end
 
 def my_hash_creator(key = :new_key, value=2 )
   new_hash= {key => value}
-  
+
 
 
   # return a hash that includes the key and value parameters passed into this method
