@@ -14,26 +14,27 @@ end
 
 
 def pioneer
-  pioner = {}
-  pioner{name: "Grace Hopper"}
-  pioner[:name]
+  pioneer= {:name => "Grace Hopper"}
+
+
+
   # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
 end
 
 
 
 def id_generator
-  id_gnerator={}
-  id_gnerator={:ORA => 4}
-  id_gnerator[:ORA]
+  id_gnerator={:id => 7}
+
 
   # return a hash with a key :id assigned to positive integer
 end
 
 def my_hash_creator(a,b )
-  c = {}
+
   a = :key
   b = a[:key]
+  c={a}
 
 
   # return a hash that includes the key and value parameters passed into this method
