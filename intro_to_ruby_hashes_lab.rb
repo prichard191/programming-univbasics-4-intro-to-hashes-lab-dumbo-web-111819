@@ -30,8 +30,8 @@ def id_generator
   # return a hash with a key :id assigned to positive integer
 end
 
-def my_hash_creator(that=:key,key: =>value )
-  uber = {that}
+def my_hash_creator(that=:key,value )
+  uber = {that(value)}
 
 
   # return a hash that includes the key and value parameters passed into this method
