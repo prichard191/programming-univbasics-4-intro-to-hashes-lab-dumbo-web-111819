@@ -14,26 +14,25 @@ end
 
 
 def pioneer
-  pioner = {}
-  pioner{name: "Grace Hopper"}
-  pioner[:name]
+  pioneer= {:name => "Grace Hopper"}
+
+
+
   # return a hash with a key of :name and a corresponding value of 'Grace Hopper'
 end
 
 
 
 def id_generator
-  id_gnerator={}
-  id_gnerator={:ORA => 4}
-  id_gnerator[:ORA]
+  id_gnerator={:id => 7}
+
 
   # return a hash with a key :id assigned to positive integer
 end
 
-def my_hash_creator(a,b )
-  c = {}
-  a = :key
-  b = a[:key]
+def my_hash_creator(key = :new_key, value=2 )
+  new_hash= {key => value}
+
 
 
   # return a hash that includes the key and value parameters passed into this method
@@ -47,14 +46,15 @@ def read_from_hash(hash, key )
 
 end
 
-def update_counting_hash(hash={}, key= :new_key)
+def update_counting_hash(hash, key)
 
-  if hash["old_key"]
-     hash["old_key"] += 1
+  if hash[key]
+     hash[key] += 1
   else
-    hash["old_key"] = 1
+     hash[key] = 1
   end
   # given a hash an a key as parameters, return an updated hash
   # if the provided key is not present in the hash, add it and assign it to the value of 1
   # if the provided key is present, increment its value by 1
+  return hash
 end
